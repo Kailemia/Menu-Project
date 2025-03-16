@@ -5,111 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/d556994849.js" crossorigin="anonymous"></script>
-    <title>The Gourmet Haven - Restaurant</title>
+    <title>Kwa Mathe - Restaurant</title>
 </head>
-<body class="bg-gray-100">
-    <!-- Header -->
-    <header class="bg-[#2c1b12] text-white py-4 fixed w-full top-0 z-10 bg-[url('https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80')] bg-cover bg-center">
-        <div class="max-w-6xl mx-auto flex justify-between items-center px-4 bg-[#2c1b12]/80 py-2">
+<body class="bg-gray-200">
+    <!-- header section -->
+     <header class="bg-[#1a2526] text-white py-4 fixed w-full top-0 z-10 bg-[url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80')] bg-cover bg-center">
+        <div class="max-w-6xl mx-auto flex justify-between items-center px-4 bg-[#1a2526]/80 py-2">
             <div class="flex items-center space-x-4">
-                <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Restaurant Logo" class="w-12 h-12 rounded-full object-cover">
-                <h2 class="text-2xl font-bold">The Gourmet Haven</h2>
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Restaurant Logo" class="w-12 h-12 rounded-full object-cover">
+                <h2 class="text-2xl font-bold">Kwa Mathe</h2>
             </div>
-            <nav>
+            <div class="md:hidden text-2xl cursor-pointer text-white">☰</div>
+            <nav class="hidden md:flex">
                 <ul class="flex space-x-6">
-                    <li><a href="#home" class="hover:text-gray-300">Home</a></li>
-                    <li><a href="#menu" class="hover:text-gray-300">Menu</a></li>
-                    <li><a href="#about" class="hover:text-gray-300">About</a></li>
-                    <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+                    <li><a href="#home" class="hover:text-[#a8baba]">Home</a></li>
+                    <li><a href="#menu" class="hover:text-[#a8baba]">Menu</a></li>
+                    <li><a href="#about" class="hover:text-[#a8baba]">About</a></li>
+                    <li><a href="#contact" class="hover:text-[#a8baba]">Contact</a></li>
                 </ul>
             </nav>
         </div>
-    </header>
 
-    <!-- Home Section -->
-    <section id="home" class="bg-[#f4e9e2] text-center pt-32 pb-16">
-        <div class="max-w-6xl mx-auto px-4">
-            <h1 class="text-4xl font-bold mb-4">Welcome to The Gourmet Haven</h1>
-            <p class="text-lg">Experience culinary excellence in a cozy atmosphere</p>
-        </div>
-    </section>
-
-    <!-- Menu Section -->
-    <section id="menu" class="py-16">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-center">Our Menu</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="relative overflow-hidden bg-white p-6 rounded-lg shadow-md transition-all duration-300 before:content-[''] before:absolute before:inset-0 before:bg-[url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60')] before:bg-cover before:bg-center before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-10">
-                    <h3 class="text-xl font-semibold mb-4 relative z-10">Starters</h3>
-                    <div class="relative z-10 opacity-75 transition-all duration-300 translate-y-2 hover:opacity-100 hover:translate-y-0">
-                        <p>Garlic Bread - $5.99</p>
-                        <p>Bruschetta - $7.99</p>
-                    </div>
-                </div>
-                <div class="relative overflow-hidden bg-white p-6 rounded-lg shadow-md transition-all duration-300 before:content-[''] before:absolute before:inset-0 before:bg-[url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60')] before:bg-cover before:bg-center before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-10">
-                    <h3 class="text-xl font-semibold mb-4 relative z-10">Main Courses</h3>
-                    <div class="relative z-10 opacity-75 transition-all duration-300 translate-y-2 hover:opacity-100 hover:translate-y-0">
-                        <p>Grilled Salmon - $19.99</p>
-                        <p>Pasta Primavera - $15.99</p>
-                    </div>
-                </div>
-                <div class="relative overflow-hidden bg-white p-6 rounded-lg shadow-md transition-all duration-300 before:content-[''] before:absolute before:inset-0 before:bg-[url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60')] before:bg-cover before:bg-center before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-10">
-                    <h3 class="text-xl font-semibold mb-4 relative z-10">Desserts</h3>
-                    <div class="relative z-10 opacity-75 transition-all duration-300 translate-y-2 hover:opacity-100 hover:translate-y-0">
-                        <p>Chocolate Lava Cake - $8.99</p>
-                        <p>Tiramisu - $7.99</p>
-                    </div>
-                </div>
-                <div class="relative overflow-hidden bg-white p-6 rounded-lg shadow-md transition-all duration-300 before:content-[''] before:absolute before:inset-0 before:bg-[url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60')] before:bg-cover before:bg-center before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-10">
-                    <h3 class="text-xl font-semibold mb-4 relative z-10">Drinks</h3>
-                    <div class="relative z-10 opacity-75 transition-all duration-300 translate-y-2 hover:opacity-100 hover:translate-y-0">
-                        <p>House Wine - $6.99</p>
-                        <p>Fresh Lemonade - $3.99</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-16 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-center">About Us</h2>
-            <p class="text-lg">Established in 2010, The Gourmet Haven has been serving exquisite dishes made from locally-sourced ingredients. Our mission is to provide an unforgettable dining experience with exceptional service.</p>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-16">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-center">Contact Us</h2>
-            <div class="max-w-md mx-auto">
-                <form class="space-y-4">
-                    <input type="text" placeholder="Name" required class="w-full p-2 border rounded">
-                    <input type="email" placeholder="Email" required class="w-full p-2 border rounded">
-                    <input type="date" required class="w-full p-2 border rounded">
-                    <textarea placeholder="Message" rows="4" required class="w-full p-2 border rounded"></textarea>
-                    <div class="flex justify-center">
-                        <button type="submit" class="bg-[#2c1b12] text-white px-6 py-2 rounded hover:bg-[#3d281a]">
-                            Make Reservation
-                        </button>
-                    </div>
-                </form>
-            </div>
-            <p class="text-center mt-6">Email: info@gourmethaven.com | Phone: (555) 123-4567</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-[#2c1b12] text-white py-8">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <p>123 Gourmet Street, Foodville</p>
-            <div class="mt-4 flex justify-center space-x-6">
-                <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="hover:text-gray-300"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
-    </footer>
+     </header>
+    
 </body>
 </html>
