@@ -89,5 +89,56 @@
             </div>
         </div>
     </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-[#d9c7a5]">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center text-[#1a2526]">About Us</h2>
+            <p class="text-lg text-[#3b4a4b]">Established in 2025, Kwa Mathe has been serving exquisite dishes made from locally-sourced ingredients. Our mission is to provide an unforgettable dining experience with exceptional service to all comrades.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-[#e5e5e5]">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center text-[#1a2526]">Contact Us</h2>
+            <div class="max-w-md mx-auto">
+                <form class="space-y-4">
+                    <input type="text" placeholder="Name" required class="w-full p-2 border rounded border-[#3b4a4b] text-[#3b4a4b] placeholder-[#3b4a4b]">
+                    <input type="email" placeholder="Email" required class="w-full p-2 border rounded border-[#3b4a4b] text-[#3b4a4b] placeholder-[#3b4a4b]">
+                    <input type="date" required class="w-full p-2 border rounded border-[#3b4a4b] text-[#3b4a4b]">
+                    <textarea placeholder="Message" rows="4" required class="w-full p-2 border rounded border-[#3b4a4b] text-[#3b4a4b] placeholder-[#3b4a4b]"></textarea>
+                    <div class="flex justify-center">
+                        <button type="submit" class="bg-[#1a2526] text-white px-6 py-2 rounded hover:bg-[#2f3b3c]">
+                            Book Your Next Meal
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <p class="text-center mt-6 text-[#3b4a4b]">Email: info@kwamathe.com | Phone: +254 123654789</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1a2526] text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>Mirema Street, Kwa Mathe</p>
+            <div class="mt-4 flex justify-center space-x-6">
+                <a href="#" class="hover:text-[#a8baba]"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover:text-[#a8baba]"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-[#a8baba]"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.md\\:hidden');
+        const mobileMenu = document.querySelector('#mobile-menu');
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('-translate-x-full');
+            mobileMenu.classList.toggle('translate-x-0');
+        });
+    </script>
 </body>
 </html>
